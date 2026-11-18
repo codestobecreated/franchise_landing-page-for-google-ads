@@ -1,0 +1,400 @@
+export const STATES = [
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
+  "Andaman and Nicobar Islands",
+  "Chandigarh",
+  "Dadra and Nagar Haveli and Daman and Diu",
+  "Lakshadweep",
+  "Delhi",
+  "Puducherry",
+  "Ladakh",
+  "Jammu and Kashmir"
+] as const;
+
+export const CITIES: Record<string, string[]> = {
+  "Andhra Pradesh": [
+    "Visakhapatnam",
+    "Vijayawada",
+    "Guntur",
+    "Nellore",
+    "Kurnool",
+    "Rajahmundry",
+    "Tirupati",
+    "Kakinada",
+    "Anantapur",
+    "Kadapa",
+    "Eluru",
+    "Chirala",
+    "Chittoor"
+  ],
+  "Arunachal Pradesh": [
+    "Naharlagun",
+    "Pasighat",
+    "Tawang",
+    "Ziro",
+    "Itanagar",
+    "Bomdila"
+  ],
+  "Assam": [
+    "Guwahati",
+    "Silchar",
+    "Dibrugarh",
+    "Jorhat",
+    "Nagaon",
+    "Tinsukia",
+    "Tezpur",
+    "North Lakhimpur",
+    "Barpeta",
+    "Bongaigaon"
+  ],
+  "Bihar": [
+    "Patna",
+    "Gaya",
+    "Bhagalpur",
+    "Darbhanga",
+    "Bihar Sharif",
+    "Purnia",
+    "Arrah",
+    "Begusarai"
+  ],
+  "Chhattisgarh": [
+    "Raipur",
+    "Bhilai",
+    "Bilaspur",
+    "Korba",
+    "Durg",
+    "Rajnandgaon"
+  ],
+  "Goa": [
+    "Panaji",
+    "Margao",
+    "Vasco da Gama",
+    "Mapusa",
+    "Ponda"
+  ],
+  "Gujarat": [
+    "Ahmedabad",
+    "Surat",
+    "Vadodara",
+    "Rajkot",
+    "Bhavnagar",
+    "Jamnagar",
+    "Gandhinagar"
+  ],
+  "Haryana": [
+    "Gurugram",
+    "Gurgaon",
+    "Faridabad",
+    "Panipat",
+    "Ambala",
+    "Yamunanagar",
+    "Rohtak",
+    "Hisar",
+    "Karnal",
+    "Sonipat",
+    "Panchkula",
+    "Bhiwani",
+    "Sirsa",
+    "Bahadurgarh",
+    "Jind",
+    "Thanesar",
+    "Kaithal",
+    "Rewari",
+    "Palwal",
+    "Kurukshetra"
+  ],
+  "Himachal Pradesh": [
+    "Shimla",
+    "Dharamshala",
+    "Solan",
+    "Mandi",
+    "Kullu",
+    "Manali",
+    "Baddi",
+    "Nahan",
+    "Paonta Sahib",
+    "Sundarnagar",
+    "Chamba",
+    "Una",
+    "Hamirpur",
+    "Bilaspur",
+    "Kangra",
+    "Palampur"
+  ],
+  "Jharkhand": [
+    "Ranchi",
+    "Jamshedpur",
+    "Dhanbad",
+    "Bokaro Steel City",
+    "Deoghar"
+  ],
+  "Karnataka": [
+    "Bengaluru",
+    "Hubli-Dharwad",
+    "Mysore",
+    "Mangalore",
+    "Belgaum",
+    "Gulbarga",
+    "Davangere"
+  ],
+  "Kerala": [
+    "Kochi",
+    "Kozhikode",
+    "Thiruvananthapuram",
+    "Thrissur",
+    "Malappuram",
+    "Kollam",
+    "Kottayam"
+  ],
+  "Madhya Pradesh": [
+    "Indore",
+    "Bhopal",
+    "Jabalpur",
+    "Gwalior",
+    "Ujjain",
+    "Sagar"
+  ],
+  "Maharashtra": [
+    "Mumbai",
+    "Pune",
+    "Nagpur",
+    "Thane",
+    "Nashik",
+    "Aurangabad",
+    "Solapur"
+  ],
+  "Manipur": [
+    "Imphal",
+    "Bishnupur",
+    "Chandel"
+  ],
+  "Meghalaya": [
+    "Shillong",
+    "Tura",
+    "Jowai",
+    "Baghmara"
+  ],
+  "Mizoram": [
+    "Aizawl",
+    "Lunglei",
+    "Champhai"
+  ],
+  "Nagaland": [
+    "Dimapur",
+    "Kohima",
+    "Mokokchung",
+    "Zunheboto"
+  ],
+  "Odisha": [
+    "Bhubaneswar",
+    "Cuttack",
+    "Rourkela",
+    "Brahmapur",
+    "Sambalpur",
+    "Puri"
+  ],
+  "Punjab": [
+    "Ludhiana",
+    "Amritsar",
+    "Jalandhar",
+    "Patiala",
+    "Bathinda",
+    "Mohali",
+    "SAS Nagar",
+    "Hoshiarpur",
+    "Pathankot",
+    "Moga",
+    "Abohar",
+    "Malerkotla",
+    "Khanna",
+    "Phagwara",
+    "Muktsar",
+    "Barnala",
+    "Rajpura",
+    "Firozpur",
+    "Kapurthala",
+    "Batala"
+  ],
+  "Rajasthan": [
+    "Jaipur",
+    "Jodhpur",
+    "Kota",
+    "Bikaner",
+    "Ajmer",
+    "Udaipur",
+    "Bhilwara",
+    "Alwar",
+    "Bharatpur",
+    "Sri Ganganagar",
+    "Sikar",
+    "Pali",
+    "Chittorgarh",
+    "Beawar",
+    "Tonk",
+    "Kishangarh",
+    "Barmer",
+    "Hanumangarh"
+  ],
+  "Sikkim": [
+    "Gangtok",
+    "Namchi",
+    "Gyalshing"
+  ],
+  "Tamil Nadu": [
+    "Chennai",
+    "Coimbatore",
+    "Madurai",
+    "Tiruchirappalli",
+    "Salem",
+    "Tirunelveli",
+    "Erode"
+  ],
+  "Telangana": [
+    "Hyderabad",
+    "Warangal",
+    "Nizamabad",
+    "Karimnagar",
+    "Khammam"
+  ],
+  "Tripura": [
+    "Agartala",
+    "Amarpur"
+  ],
+  "Uttar Pradesh": [
+    "Lucknow",
+    "Kanpur",
+    "Ghaziabad",
+    "Agra",
+    "Varanasi",
+    "Meerut",
+    "Prayagraj",
+    "Allahabad",
+    "Bareilly",
+    "Aligarh",
+    "Moradabad",
+    "Saharanpur",
+    "Gorakhpur",
+    "Noida",
+    "Greater Noida",
+    "Firozabad",
+    "Jhansi",
+    "Muzaffarnagar",
+    "Mathura",
+    "Ayodhya",
+    "Rampur",
+    "Shahjahanpur",
+    "Farrukhabad",
+    "Hapur",
+    "Etawah",
+    "Mirzapur"
+  ],
+  "Uttarakhand": [
+    "Dehradun",
+    "Haridwar",
+    "Roorkee",
+    "Haldwani",
+    "Rudrapur",
+    "Kashipur",
+    "Rishikesh",
+    "Pithoragarh",
+    "Ramnagar",
+    "Nainital",
+    "Mussoorie",
+    "Almora",
+    "Kotdwar"
+  ],
+  "West Bengal": [
+    "Kolkata",
+    "Howrah",
+    "Durgapur",
+    "Asansol",
+    "Siliguri"
+  ],
+  "Andaman and Nicobar Islands": [
+    "Port Blair",
+    "Bambooflat",
+    "Garacharma"
+  ],
+  "Chandigarh": [
+    "Chandigarh"
+  ],
+  "Dadra and Nagar Haveli and Daman and Diu": [
+    "Silvassa",
+    "Daman",
+    "Diu",
+    "Dadra"
+  ],
+  "Lakshadweep": [
+    "Kavaratti",
+    "Andrott"
+  ],
+  "Delhi": [
+    "Delhi",
+    "New Delhi",
+    "North Delhi",
+    "South Delhi",
+    "West Delhi",
+    "East Delhi",
+    "Central Delhi",
+    "Dwarka",
+    "Rohini",
+    "Connaught Place",
+    "Saket",
+    "Janakpuri",
+    "Pitampura",
+    "Vasant Kunj",
+    "Karol Bagh",
+    "Laxmi Nagar",
+    "Burari"
+  ],
+  "Puducherry": [
+    "Puducherry",
+    "Karaikal",
+    "Mahe",
+    "Yanam"
+  ],
+  "Ladakh": [
+    "Leh",
+    "Kargil"
+  ],
+  "Jammu and Kashmir": [
+    "Srinagar",
+    "Jammu",
+    "Anantnag",
+    "Baramulla",
+    "Kathua",
+    "Sopore",
+    "Udhampur",
+    "Punch",
+    "Rajouri",
+    "Ganderbal",
+    "Pulwama",
+    "Kulgam"
+  ]
+};

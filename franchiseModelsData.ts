@@ -1,0 +1,55 @@
+// Shared by the model cards and the page's Offer schema so prices in JSON-LD always match the cards.
+export const DEFAULT_MODELS = [
+  {
+    title: "STD 60KW",
+    subtitle: "60 KW POWER SETUP",
+    capacity: "60 kW",
+    price: "₹ 10 Lakhs",
+    space: "400 sq. ft",
+    features: [
+      "Space Requirement: 400 sq. ft",
+      "ARAI Certified",
+      "IP55 / IP66 Protection",
+    ],
+    desc: "Dual CCS2 fast charger ideal for busy state highways and city centers.",
+    image: "/franchise/60 kW.webp",
+    income: "₹ 10,000 / month",
+    units: "4,000 units / month",
+    returns: "₹ 16,00,000",
+  },
+  {
+    title: "STD 120KW",
+    subtitle: "120 KW POWER SETUP",
+    capacity: "120 kW",
+    price: "₹ 20 Lakhs",
+    space: "500 sq. ft",
+    features: [
+      "Space Requirement: 500 sq. ft",
+      "ARAI Certified",
+      "IP55 / IP66 Protection",
+    ],
+    desc: "Heavy-duty ultra fast dual gun station for expressways & high traffic.",
+    image: "/franchise/120 kW.webp",
+    income: "₹ 20,000 / month",
+    units: "8,000 units / month",
+    returns: "₹ 32,00,000",
+  },
+  {
+    title: "SUPER HUB",
+    subtitle: "240 KW POWER SETUP",
+    capacity: "240 kW",
+    price: "₹ 1 Crore",
+    space: "3,000 sq. ft",
+    features: [
+      "Space Requirement: 3,000 sq. ft",
+      "ARAI Certified",
+      "IP55 / IP66 Protection",
+    ],
+    desc: "Multi-gun charging canopy hub for fleet operators & commercial plazas.",
+    image: "/franchise/Super Hub.webp",
+    income: "₹ 1,00,000 / month",
+    units: "15,000 units / month",
+    returns: "₹ 1,60,00,000",
+  },
+
+];
