@@ -73,21 +73,11 @@ export default function EnquiryModal({
     };
 
     try {
-      // Try local Next.js proxy route first, fallback to direct Core API
-      let res = await fetch("/api/franchise", {
+      const res = await fetch("https://core.reluxelectric.com/api/franchise/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-
-      if (!res.ok) {
-        // Fallback to direct core API
-        res = await fetch("https://core.reluxelectric.com/api/franchise/", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-      }
 
       if (res.ok) {
         setStatus({
