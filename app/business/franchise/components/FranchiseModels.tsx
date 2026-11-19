@@ -96,17 +96,7 @@ export default function FranchiseModels() {
                 </div>
               </div>
 
-              {/* Bullet Features List with Green Checkmarks */}
-              <div className="space-y-2.5 mb-5 flex-1">
-                {model.features && model.features.length > 0 && (
-                  model.features.map((feat, fIdx) => (
-                    <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-700 font-semibold leading-snug">
-                      <span className="text-[#00b14f] shrink-0 mt-0.5">✓</span>
-                      <span>{feat}</span>
-                    </div>
-                  ))
-                )}
-              </div>
+
 
               {/* ENQUIRE NOW Button */}
               <button

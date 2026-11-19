@@ -118,17 +118,7 @@ export default function FranchiseModels() {
                 </div>
               </div>
 
-              {/* Bullet Features List with Green Checkmarks */}
-              <div className="space-y-2.5 mb-5 flex-1">
-                {model.features && model.features.length > 0 && (
-                  model.features.map((feat: string, fIdx: number) => (
-                    <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-700 font-semibold leading-snug">
-                      <CheckCircle2 className="w-4 h-4 text-[#00b14f] shrink-0 mt-0.5" />
-                      <span>{feat}</span>
-                    </div>
-                  ))
-                )}
-              </div>
+
 
               {/* Guaranteed Income Stats */}
               {/* {(model.income || model.units || model.returns) && (
