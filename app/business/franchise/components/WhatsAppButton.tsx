@@ -1,21 +1,19 @@
 "use client";
 
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa6";
+
 export default function WhatsAppButton() {
   return (
     <a
       href="https://wa.me/919884866993?text=Hi%20Relux%2C%20I%20am%20interested%20in%20your%20EV%20Charging%20Franchise"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] hover:bg-[#20BA5A] rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-40"
+      className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.45)] hover:shadow-[0_8px_30px_rgba(37,211,102,0.65)] transition-all duration-300 hover:scale-110 z-40 group cursor-pointer"
       title="Chat with us on WhatsApp"
+      aria-label="Chat with us on WhatsApp"
     >
-      <svg
-        className="w-7 h-7 text-white"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.025 0-2.031.313-2.896.9-.793.52-1.446 1.249-1.869 2.078-.423.829-.646 1.769-.646 2.72 0 1.05.223 2.075.646 3.004.423.929 1.076 1.758 1.869 2.278.865.587 1.871.9 2.896.9h.004c1.025 0 2.031-.313 2.896-.9.793-.52 1.446-1.249 1.869-2.078.423-.829.646-1.769.646-2.72 0-1.05-.223-2.075-.646-3.004-.423-.929-1.076-1.758-1.869-2.278-.865-.587-1.871-.9-2.896-.9m5.064-3.579C17.064 2.146 13.993.5 10.5.5 5.253.5.74 5.013.74 10.26c0 1.818.446 3.598 1.291 5.161L.5 23.5l8.391-2.286c1.527.835 3.254 1.277 5.009 1.277h4.86c5.246 0 9.76-4.513 9.76-9.76 0-2.6-1.063-5.049-2.996-6.879z"/>
-      </svg>
+      <FaWhatsapp className="w-8 h-8 transition-transform duration-300 group-hover:scale-110" />
     </a>
   );
 }
