@@ -28,9 +28,10 @@ export default function HowItWorks() {
 
   return (
     <section
-      className="w-full py-16 md:py-24 bg-black text-white font-poppins relative overflow-hidden border-b border-white/10"
+      className="w-full py-16 md:py-24 bg-white text-slate-900 font-poppins relative overflow-hidden border-b border-slate-200"
       style={{ fontFamily: '"Poppins", "Poppins Fallback", var(--font-poppins), sans-serif' }}
     >
+      {/* Background glow accents */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#00b14f]/5 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -41,10 +42,10 @@ export default function HowItWorks() {
               Setting Up a Station
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight leading-tight">
             How Your EV Charging Franchise <span className="text-[#00b14f]">Works</span>
           </h2>
-          <p className="mt-2 text-white/70 text-[16px] font-normal leading-relaxed max-w-3xl">
+          <p className="mt-2 text-slate-600 text-[16px] font-normal leading-relaxed max-w-3xl">
             Setting up an EV charging station doesn't have to be complicated. With Relux, you get the technology, infrastructure and expertise needed to establish and operate your own EV charging station.
           </p>
         </div>
@@ -53,16 +54,16 @@ export default function HowItWorks() {
           {steps.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white/[0.04] hover:bg-white/[0.07] border border-white/10 hover:border-[#00b14f]/40 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-slate-50 hover:bg-white border border-slate-200 hover:border-[#00b14f]/50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 <span className="text-[#00b14f] text-2xl font-black tracking-tight block mb-4 group-hover:scale-105 transition-transform duration-300">
                   {item.step}
                 </span>
-                <h3 className="text-white font-bold text-lg mb-2 leading-snug">
+                <h3 className="text-slate-900 font-bold text-lg mb-2 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-white/65 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   {item.desc}
                 </p>
               </div>
