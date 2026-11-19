@@ -25,11 +25,11 @@ export default function HeroSection({ onOpenEnquiry }: HeroSectionProps = {}) {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 min-h-55 md:min-h-70">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight tracking-tight max-w-4xl">
-          EV Charging Franchise Models{" "}
-          <span className="text-[#00b14f]">WITH RELUX.</span>
+          EV Charging Station Franchise Opportunities{" "}
+          <span className="text-[#00b14f]">in India</span>
         </h1>
         <p className="mt-5 text-white/80 text-[16px] leading-relaxed max-w-2xl font-normal">
-          Relux offers multiple franchise models to fit your investment, location, and site potential. We bring the technology, infrastructure, and operational support required to get your station up and running.
+          Relux provides EV charging station franchise opportunities with multiple charger capacities to suit different locations and business requirements. Explore our franchise models and get guidance on site feasibility and the installation process.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-7" />
       </div>

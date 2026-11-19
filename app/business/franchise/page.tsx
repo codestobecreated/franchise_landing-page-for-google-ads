@@ -1,25 +1,17 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FranchiseModels from "./components/FranchiseModels";
-import SimpleROI from "./components/SimpleROI";
+import HowItWorks from "./components/HowItWorks";
 import WhatAreYouInvestingIn from "./components/WhatAreYouInvestingInSimple";
 import FranchiseTerms from "./components/FranchiseTerms_Enhanced";
-import Footer from "./components/Footer";
+import SiteFeasibility from "./components/SiteFeasibility";
+import CTASection from "./components/CTASection";
 import WhatsAppButton from "./components/WhatsAppButton";
-import { DEFAULT_MODELS } from "./data/franchiseModelsData";
 
 export const metadata = {
-  title: "EV Charging Station Franchise from ₹10 Lakh | Relux",
+  title: "EV Charging Station Franchise Opportunities in India | Relux",
   description:
-    "Own a Relux EV charging franchise: 60 kW for ₹10 lakh, 120 kW ₹20 lakh, 240 kW Super Hub ₹1 crore. ARAI-certified chargers and 3–5 year payback.",
-  keywords: [
-    "EV franchise cost India",
-    "best EV charging franchise",
-    "EV charging station franchise cost in India",
-    "electric car charging business",
-    "Relux Electric franchise partner",
-    "DC fast charger franchise",
-  ],
+    "Relux provides EV charging station franchise opportunities with multiple charger capacities to suit different locations and business requirements. Explore our franchise models and get guidance on site feasibility and the installation process.",
 };
 
 export default function FranchisePage() {
@@ -30,14 +22,15 @@ export default function FranchisePage() {
       style={{ fontFamily: '"Poppins", "Poppins Fallback", var(--font-poppins), sans-serif' }}
     >
       <Navbar />
-      <div className="pt-16">
+      <div className="pt-20 sm:pt-24">
         <HeroSection />
         <FranchiseModels />
-        <SimpleROI />
+        <HowItWorks />
         <WhatAreYouInvestingIn />
         <FranchiseTerms />
+        <SiteFeasibility />
+        <CTASection />
       </div>
-      <Footer />
       <WhatsAppButton />
     </main>
   );

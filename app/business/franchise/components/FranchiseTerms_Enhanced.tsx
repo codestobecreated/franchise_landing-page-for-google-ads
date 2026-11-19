@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import EnquiryModal from "./EnquiryModal";
 
 const IconShieldCheck = ({ className = "w-5 h-5" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
@@ -31,7 +32,6 @@ const IconBadgeCheck = ({ className = "w-5 h-5" }: { className?: string }) => (
 const IconAlertCircle = ({ className = "w-5 h-5" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="12" r="10" />
-    <line x1="12" x2="12" y1="8" y2="12" />
     <line x1="12" x2="12.01" y1="16" y2="16" />
   </svg>
 );
@@ -51,6 +51,8 @@ const IconTrendingUp = ({ className = "w-5 h-5" }: { className?: string }) => (
 );
 
 export default function FranchiseTerms() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const terms = [
     {
       title: "We will provide feasibility guidance.",
@@ -95,7 +97,7 @@ export default function FranchiseTerms() {
       style={{ fontFamily: '"Poppins", "Poppins Fallback", var(--font-poppins), sans-serif' }}
     >
       <div className="max-w-7xl mx-auto px-[5%] relative z-10">
-        <div className="max-w-3xl mb-14 space-y-4">
+        <div className="max-w-3xl mb-12 space-y-4">
           <span className="text-[#00b14f] text-xs font-black uppercase tracking-[0.3em]">
             WORKING WITH RELUX
           </span>
@@ -103,11 +105,18 @@ export default function FranchiseTerms() {
             Franchise Terms &amp; <span className="text-[#00b14f]">Guidelines</span>
           </h2>
           <p className="text-black/65 text-[16px] leading-relaxed font-normal max-w-2xl">
-            A Relux franchise may be ideal for landowners, property owners, businesses, and fleet operators. Customer-facing locations such as hotels, restaurants, commercial buildings, or empty land where EV traffic is developing are all excellent locations for a franchise.
+            A Relux franchise may be ideal for landowners, property owners, businesses, and fleet operators. Customer-facing locations such as hotels, restaurants, commercial buildings, or empty land where EV traffic is developing are all excellent locations for a franchise. To learn more about the franchise terms &amp; guidelines, reach out to Relux today.
           </p>
-          <p className="text-black/50 text-[16px] leading-relaxed font-normal max-w-2xl">
-            Here are some things to keep in mind regarding a partnership with us at Relux.
-          </p>
+
+          <div className="pt-2">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-flex items-center gap-2 bg-[#00b14f] hover:bg-[#009643] text-white font-extrabold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-all duration-300 shadow-md hover:scale-[1.02] cursor-pointer"
+            >
+              <span>Reach Out to Relux Today</span>
+              <span>→</span>
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -130,6 +139,14 @@ export default function FranchiseTerms() {
           })}
         </div>
       </div>
+
+      {isModalOpen && (
+        <EnquiryModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          modelTitle="Franchise Terms & Guidelines"
+        />
+      )}
     </section>
   );
 }
