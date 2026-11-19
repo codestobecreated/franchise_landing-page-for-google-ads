@@ -23,7 +23,7 @@ export default function HeroSection({ onOpenEnquiry }: HeroSectionProps = {}) {
       <div className="absolute inset-0 bg-black/85" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-28 sm:pt-32 md:pt-36 pb-16 sm:pb-20 md:pb-24 w-full">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-20 md:py-28 w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight tracking-tight max-w-4xl">
           EV Charging Station Franchise Opportunities{" "}
           <span className="text-[#00b14f]">in India</span>
