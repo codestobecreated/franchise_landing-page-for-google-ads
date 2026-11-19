@@ -5,7 +5,6 @@ import HowItWorks from "./business/franchise/components/HowItWorks";
 import WhatAreYouInvestingIn from "./business/franchise/components/WhatAreYouInvestingInSimple";
 import FranchiseTerms from "./business/franchise/components/FranchiseTerms_Enhanced";
 import SiteFeasibility from "./business/franchise/components/SiteFeasibility";
-import CTASection from "./business/franchise/components/CTASection";
 import WhatsAppButton from "./business/franchise/components/WhatsAppButton";
 
 export const metadata = {
@@ -29,7 +28,6 @@ export default function Home() {
         <WhatAreYouInvestingIn />
         <FranchiseTerms />
         <SiteFeasibility />
-        <CTASection />
       </div>
       <WhatsAppButton />
     </main>
