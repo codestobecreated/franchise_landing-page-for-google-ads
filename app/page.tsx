@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <main
       suppressHydrationWarning
-      className="bg-black min-h-screen font-poppins selection:bg-[#00b14f] selection:text-black"
+      className="bg-black min-h-screen font-poppins selection:bg-[#00b14f] selection:text-black relative"
       style={{ fontFamily: '"Poppins", "Poppins Fallback", var(--font-poppins), sans-serif' }}
     >
       <Navbar />
-      <div className="pt-20 sm:pt-24">
+      <div>
         <HeroSection />
         <FranchiseModels />
         <HowItWorks />
